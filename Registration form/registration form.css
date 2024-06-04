@@ -1,0 +1,194 @@
+* {
+    font-family: "Kanit", sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: blue;
+    text-align: center;
+    height: 3%;
+    margin: 1%;
+}
+
+form {
+    height: 97%;
+    font-size: 12px;
+    background-image: linear-gradient(319deg, #fce055 0%, #256eff 37%, #46237a 100%);
+    border: black dashed;
+    color: white;
+    padding: 1%;
+}
+
+::-webkit-input-placeholder {
+    font-size: 70%;
+}
+
+table {
+    width: 100%;
+}
+
+td {
+    width: 33.3%;
+    padding: 8px;
+}
+
+label {
+    display: inline-block;
+}
+
+.but {
+    text-align: center;
+}
+
+#day,
+#month,
+#year {
+    font-weight: normal;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 96%;
+    box-sizing: border-box;
+}
+
+#other {
+    width: 50%;
+}
+
+input[type="radio"]:hover,
+input[type="checkbox"]:hover,
+button:hover {
+    cursor: pointer;
+}
+
+button {
+    padding: 1%;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 500px) {
+
+    html,
+    body {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h2 {
+        height: auto;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    table,
+    tr,
+    td {
+        display: block;
+        width: 100%;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 70%;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        max-width: 70%;
+    }
+
+    form {
+        height: auto;
+        width: 100%;
+    }
+
+    ::-webkit-input-placeholder {
+        font-size: 70%;
+    }
+
+    .firs {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (min-height: 870px) and (min-width: 101px) {
+    form {
+        height: 97%;
+    }
+
+    table {
+        height: 100%;
+    }
+}
+
+@media screen and (min-height: 870px) and (max-width: 700px) {
+    form {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {
+    form {
+        height: auto;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    html, body {
+        height: 100%;
+    }
+    
+    form {
+        padding: 0.3%;
+    }
+
+    table{
+        height: 100%;
+    }
+}
+
+@media screen and  (min-width: 1024px) and (min-height: 600px) {
+    form{
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    form{
+        height: 97%;
+    }
+}
+
+@media screen and  (min-width: 1024px) and (min-height: 800px) {
+    form{
+        height: 97%;
+    }
+
+    td{
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width: 500px) and (min-height: 870px) {
+    form{
+        height: 97%;
+    }
+}

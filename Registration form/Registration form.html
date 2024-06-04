@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+    <link rel="stylesheet" href="registration form.css">
+</head>
+
+<body>
+    <h2><u>Student Registration Form Using Table in HTML</u></h2>
+    <form action="" method="post">
+        <table>
+            <tr>
+                <td class="firs"><label for="firstname">First Name</label></td>
+                <td><input type="text" name="firstname" id="firstname" maxlength="50" placeholder="ex. Ghanendra" required></td>
+                <td><label for="firstname">(Max 50 Characters Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="lastname">Last Name</label></td>
+                <td><input type="text" name="lastname" id="lastname" maxlength="50" placeholder="ex. Yadav" required></td>
+                <td><label for="lastname">(Max 50 Characters Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="emailid">Email ID</label></td>
+                <td><input type="email" name="emailid" id="emailid" placeholder="ex. yghanendra@gmail.com" required></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="mobilenumber">Mobile Number</label></td>
+                <td><input type="number" name="mobilenumber" id="mobilenumber" maxlength="10" placeholder="ex. 7842xxxxxx" required></td>
+                <td><label for="mobilenumber">(10 Digits Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="gender">Gender</label></td>
+                <td colspan="2"><input type="radio" name="gender" id="male">
+                <label for="Male">Male</label>
+                <input type="radio" name="gender" id="female">
+                <label for="Female">Female</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="date">Date of Birth(DOB)</label></td>
+                <td colspan="2">
+                    <select name="date" id="day">
+                        <option value="Day:">Day:</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                        <option value="13">13</option>
+                        <option value="14">14</option>
+                        <option value="15">15</option>
+                        <option value="16">16</option>
+                        <option value="17">17</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                    </select>
+                    <select name="date" id="month">
+                        <option value="month">Month:</option>
+                        <option value="january">January</option>
+                        <option value="february">February</option>
+                        <option value="march">March</option>
+                        <option value="april">April</option>
+                        <option value="may">May</option>
+                        <option value="june">June</option>
+                        <option value="july">July</option>
+                        <option value="august">August</option>
+                        <option value="september">September</option>
+                        <option value="october">October</option>
+                        <option value="november">November</option>
+                        <option value="december">December</option>
+                    </select>
+                    <select name="date" id="year">
+                        <option value="year">Year:</option>
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="address">Address</label></td>
+                <td colspan="2"><textarea name="address" id="address"></textarea></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="city">City</label></td>
+                <td><input type="text" name="city" id="city" maxlength="50" placeholder="ex. Bangalore"></td>
+                <td><label for="city">(Max 50 Characters Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="pincode">Pin Code</label></td>
+                <td><input type="text" name="pincode" id="pincode" maxlength="6" placeholder="ex. 560068"></td>
+                <td><label for="pincode">(Max 6 Numbers Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="state">State</label></td>
+                <td><input type="text" name="state" id="state" maxlength="50" placeholder="ex. Karnataka"></td>
+                <td><label for="state">(Max 50 Characters Allowed)</label></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="country">Country</label></td>
+                <td><input type="text" name="country" id="country" placeholder="ex. India"></td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="hobbies">Hobbies</label></td>
+                <td colspan="2">
+                    <input type="checkbox" name="hobbies" id="drawing">
+                    <label for="drawing">Drawing</label>
+                    <input type="checkbox" name="hobbies" id="singing">
+                    <label for="singing">Singing</label>
+                    <input type="checkbox" name="hobbies" id="dancing">
+                    <label for="dancing">Dancing</label>
+                    <input type="checkbox" name="hobbies" id="sketching">
+                    <label for="sketching">Sketching</label><br>
+                    <input type="checkbox" name="hobbies" id="others">
+                    <label for="others">Others</label>
+                    <input type="text" name="hobbies" id="other" maxlength="50" placeholder="ex. Teaching">
+                    <label for="other">(Max 50 Characters Allowed)</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="qualification">Qualification</label></td>
+                <td colspan="2">
+                    <input type="checkbox" name="qualification" id="highschool">
+                    <label for="highschool">High School(10th)</label><br>
+                    <input type="checkbox" name="qualification" id="higherschool">
+                    <label for="higherschool">Higher  School(12th)</label><br>
+                    <input type="checkbox" name="qualification" id="graduation">
+                    <label for="graduation">Graduation(Bachelors)</label><br>
+                    <input type="checkbox" name="qualification" id="postgraduiation">
+                    <label for="postgraduation">Post Graduation(Masters)</label><br>
+                    <input type="checkbox" name="qualification" id="phd">
+                    <label for="phd">Phd</label>
+                </td>
+            </tr>
+            <tr>
+                <td class="firs"><label for="courses">Courses Applied For</label></td>
+                <td colspan="2">
+                    <input type="radio" name="courses" id="bca">
+                    <label for="bca">BCA(Bachelor of Computer Applications)</label><br>
+                    <input type="radio" name="courses" id="bcom">
+                    <label for="bcom">B.Com(Bachelor of Commerce)</label><br>
+                    <input type="radio" name="courses" id="bsc">
+                    <label for="bsc">B.Sc(Bachelor of Science)</label><br>
+                    <input type="radio" name="courses" id="ba">
+                    <label for="ba">B.A(bachelor of Arts)</label><br>
+                    <input type="radio" name="courses" id="mca">
+                    <label for="mca">MCA(Master of Computer Appllications)</label><br>
+                    <input type="radio" name="courses" id="mcom">
+                    <label for="mcom">M.Com(Master of Commerce)</label><br>
+                    <input type="radio" name="courses" id="ma">
+                    <label for="ma">MA(Master of Arts)</label>
+                </td>
+            </tr>
+            <tr class="but">
+               <td colspan="3">
+                <button>Submit</button>
+                <button>Reset</button>
+               </td> 
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
